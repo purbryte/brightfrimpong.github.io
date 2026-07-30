@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://purbryte.github.io/sitemap.xml
