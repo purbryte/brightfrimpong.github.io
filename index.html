@@ -50,6 +50,7 @@
   #top > div > div:first-child > *:nth-child(4) { animation-delay: 0.32s; }
   #top > div > div:first-child > *:nth-child(5) { animation-delay: 0.42s; }
   #top > div > div:first-child > *:nth-child(6) { animation-delay: 0.52s; }
+  #top > div > div:first-child > *:nth-child(7) { animation-delay: 0.62s; }
   #top > div > div:last-child { animation: heroIn 0.8s ease 0.35s both; }
   #about h2 span.akw { opacity: 0; display: inline-block; transform: translateY(10px); transition: opacity 0.45s ease, transform 0.45s ease; }
   #about h2 span.akw.on { opacity: 1; transform: none; }
@@ -89,6 +90,10 @@
     div[style*="grid-template-columns: 1fr auto"] { grid-template-columns: 1fr !important; gap: 28px !important; }
     article[style*="grid-template-columns: 1fr auto"] { grid-template-columns: 1fr !important; }
     article[style*="grid-template-columns: 120px"] { grid-template-columns: 1fr !important; gap: 8px !important; }
+    article[style*="grid-template-columns: 74px"] { grid-template-columns: 1fr !important; gap: 10px !important; }
+    article[style*="grid-template-columns:74px"] { grid-template-columns: 1fr !important; gap: 10px !important; }
+    #journey > div[style*="repeat(5"] { grid-template-columns: 1fr 1fr !important; row-gap: 22px !important; }
+    #journey div[style*="position:absolute"], #journey #journeyline { display: none !important; }
     article div[style*="justify-content:flex-end"] { justify-content: flex-start !important; }
     #top div[style*="aspect-ratio"] { max-width: 260px; }
     #top div[style*="position: relative"] > div[style*="position: absolute"] { display: none; }
@@ -150,6 +155,8 @@
           <a href="https://scholar.google.com/citations?hl=en&user=a10D2T8AAAAJ" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid rgba(27,35,48,0.14);color:#1b2330;font-size:14px;font-weight:600;padding:12px 20px;border-radius:2px">Google Scholar</a>
           <a href="https://www.linkedin.com/in/bright-frimpong-965918133/" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid rgba(27,35,48,0.14);color:#1b2330;font-size:14px;font-weight:600;padding:12px 20px;border-radius:2px">LinkedIn</a>
         </div>
+
+        <p style="font-family:'Spectral',serif;font-style:italic;font-size:16px;line-height:1.5;color:#58616f;margin:32px 0 0;padding-left:16px;border-left:2px solid #C8A951;max-width:42ch">The fear of the Lord is the beginning of wisdom.<span style="display:block;font-style:normal;font-family:'IBM Plex Sans',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#8a9099;margin-top:8px">Proverbs 9:10</span></p>
       </div>
 
       <div style="position:relative">
@@ -166,7 +173,7 @@
     <div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:0.8fr 1.4fr;gap:56px">
       <div>
         <div style="font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#004B8D;margin-bottom:14px"><span style="opacity:0.45">01 · </span>About</div>
-        <h2 style="font-family:'Spectral',serif;font-weight:500;font-size:42px;line-height:1.05;letter-spacing:-0.02em;margin:0">Akwaaba!</h2>
+        <h2 style="font-family:'Spectral',serif;font-weight:500;font-size:42px;line-height:1.05;letter-spacing:-0.02em;margin:0">Akwaaba!</h2><div class="kente" style="width:72px;height:4px;margin-top:18px;background:repeating-linear-gradient(90deg,#004B8D 0 9px,#C8A951 9px 13px,#1b2330 13px 17px,#C8A951 17px 21px)"></div>
       </div>
       <div>
         <p style="font-size:18px;line-height:1.65;color:#2b3444;margin:0 0 20px">Akwaaba means welcome in Ghana. I am an Assistant Professor of Business Administration (Data Science) at the Williams School of Commerce, Economics and Politics at Washington and Lee University, where I teach business analytics and data visualization. My research examines <strong style="font-weight:600">entrepreneurial legitimacy on digital platforms</strong> and how it manifests across different contexts.</p>
@@ -183,7 +190,7 @@
       <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:40px">
         <div>
           <div style="font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#004B8D;margin-bottom:14px"><span style="opacity:0.45">02 · </span>Updates</div>
-          <h2 style="font-family:'Spectral',serif;font-weight:500;font-size:44px;line-height:1.05;letter-spacing:-0.02em;margin:0">Latest news</h2>
+          <h2 style="font-family:'Spectral',serif;font-weight:500;font-size:44px;line-height:1.05;letter-spacing:-0.02em;margin:0">Latest news</h2><div class="kente" style="width:72px;height:4px;margin-top:18px;background:repeating-linear-gradient(90deg,#004B8D 0 9px,#C8A951 9px 13px,#1b2330 13px 17px,#C8A951 17px 21px)"></div>
         </div>
       </div>
 
@@ -244,7 +251,7 @@
     <div style="max-width:1120px;margin:0 auto">
       <div style="max-width:640px;margin-bottom:48px">
         <div style="font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#004B8D;margin-bottom:14px"><span style="opacity:0.45">03 · </span>Research &amp; Publications</div>
-        <h2 style="font-family:'Spectral',serif;font-weight:500;font-size:44px;line-height:1.05;letter-spacing:-0.02em;margin:0 0 16px">Peer-reviewed scholarship</h2>
+        <h2 style="font-family:'Spectral',serif;font-weight:500;font-size:44px;line-height:1.05;letter-spacing:-0.02em;margin:0 0 16px">Peer-reviewed scholarship</h2><div class="kente" style="width:72px;height:4px;margin-top:18px;background:repeating-linear-gradient(90deg,#004B8D 0 9px,#C8A951 9px 13px,#1b2330 13px 17px,#C8A951 17px 21px)"></div>
         <p style="font-size:16px;line-height:1.65;color:#58616f;margin:0">Work on crowdfunding, digital entrepreneurship, and AI in digital markets, published in leading information systems and entrepreneurship outlets.</p>
       </div>
 
@@ -252,79 +259,86 @@
       <h3 style="font-family:'IBM Plex Sans';font-size:14px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#1b2330;margin:0 0 4px;padding-bottom:14px;border-bottom:2px solid #1b2330">Journal Publications</h3>
       <div style="display:flex;flex-direction:column">
 
-        <article style="display:grid;grid-template-columns:1fr auto;gap:16px 24px;align-items:start;padding:22px 0;border-bottom:1px solid rgba(27,35,48,0.09)">
+        <article style="display:grid;grid-template-columns:74px 1fr auto;gap:16px 24px;align-items:start;padding:22px 0;border-bottom:1px solid rgba(27,35,48,0.09)">
+          <div style="font-family:'Spectral',serif;font-size:26px;font-weight:400;color:#c9ccd2;line-height:1;padding-top:2px">2026</div>
           <div>
             <a href="https://link.springer.com/article/10.1007/s10796-025-10673-4" target="_blank" style="font-size:17px;font-weight:600;line-height:1.4;color:#1b2330">The Paradoxical Impact of Smartphone Addiction on Innovative Performance: A Conservation of Resources Theory Perspective</a>
             <p style="font-size:14px;color:#58616f;margin:8px 0 0">Moqbel, M., Frimpong, B., &amp; Zhang, L. — <em>Information Systems Frontiers</em>, 2026</p>
             <button data-kf="kf1" style="display:inline-flex;align-items:center;gap:6px;background:none;border:none;padding:0;margin-top:12px;font-family:'IBM Plex Sans',sans-serif;font-size:12.5px;font-weight:600;color:#004B8D;cursor:pointer;letter-spacing:0.02em"><span>+</span> Key contribution</button>
             <button data-cite="Moqbel, M., Frimpong, B., &amp; Zhang, L. (2026). The paradoxical impact of smartphone addiction on innovative performance: A conservation of resources theory perspective. Information Systems Frontiers." style="display:inline-flex;align-items:center;background:none;border:none;padding:0;margin:12px 0 0 18px;font-family:'IBM Plex Sans',sans-serif;font-size:12.5px;font-weight:600;color:#58616f;cursor:pointer;letter-spacing:0.02em">Cite</button>
-            <div id="kf1" style="display:none;font-size:14px;line-height:1.65;color:#4a5464;background:#f2f6fa;padding:14px 16px;border-radius:3px;margin-top:10px;max-width:65ch">Smartphone addiction is usually assumed to hurt performance at work. We find a more surprising story: it drains the energy and focus employees need to innovate, yet it also keeps them connected, and that connectivity feeds innovative performance. The harm and the benefit coexist.</div>
+            <div id="kf1" style="display:none;font-size:14px;line-height:1.65;color:#4a5464;background:#f2f6fa;padding:14px 16px;border-radius:3px;margin-top:10px;max-width:65ch">Smartphone addiction exerts a paradoxical effect on innovative performance. Drawing on Conservation of Resources theory, we show that addiction depletes the personal resources innovation requires while simultaneously sustaining the social connectivity through which knowledge is exchanged. This means that the resource-depletion account dominant in the literature is incomplete, and that the net effect depends on which mechanism prevails.</div>
           </div>
           <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><span style="font-size:11.5px;font-weight:600;color:#8a6d3b;background:#f8f3e6;padding:4px 9px;border-radius:2px;white-space:nowrap">ABDC A</span><span style="font-size:11.5px;font-weight:600;color:#8a6d3b;background:#f8f3e6;padding:4px 9px;border-radius:2px;white-space:nowrap">ABS 3</span></div>
         </article>
 
-        <article style="display:grid;grid-template-columns:1fr auto;gap:16px 24px;align-items:start;padding:22px 0;border-bottom:1px solid rgba(27,35,48,0.09)">
+        <article style="display:grid;grid-template-columns:74px 1fr auto;gap:16px 24px;align-items:start;padding:22px 0;border-bottom:1px solid rgba(27,35,48,0.09)">
+          <div style="font-family:'Spectral',serif;font-size:26px;font-weight:400;color:#c9ccd2;line-height:1;padding-top:2px">2025</div>
           <div>
             <a href="https://aisel.aisnet.org/jais/vol26/iss3/1/" target="_blank" style="font-size:17px;font-weight:600;line-height:1.4;color:#1b2330">Achieving Reward-based Crowdfunding Project Success: An Examination of Value Congruence</a>
             <p style="font-size:14px;color:#58616f;margin:8px 0 0">Frimpong, B., Ayaburi, E., &amp; Andoh-Baidoo, F. K. — <em>Journal of the Association for Information Systems</em>, 2025</p>
             <button data-kf="kf2" style="display:inline-flex;align-items:center;gap:6px;background:none;border:none;padding:0;margin-top:12px;font-family:'IBM Plex Sans',sans-serif;font-size:12.5px;font-weight:600;color:#004B8D;cursor:pointer;letter-spacing:0.02em"><span>+</span> Key contribution</button>
             <button data-cite="Frimpong, B., Ayaburi, E., &amp; Andoh-Baidoo, F. K. (2025). Achieving reward-based crowdfunding project success: An examination of value congruence. Journal of the Association for Information Systems, 26(3)." style="display:inline-flex;align-items:center;background:none;border:none;padding:0;margin:12px 0 0 18px;font-family:'IBM Plex Sans',sans-serif;font-size:12.5px;font-weight:600;color:#58616f;cursor:pointer;letter-spacing:0.02em">Cite</button>
-            <div id="kf2" style="display:none;font-size:14px;line-height:1.65;color:#4a5464;background:#f2f6fa;padding:14px 16px;border-radius:3px;margin-top:10px;max-width:65ch">We analyze the language of thousands of campaigns to measure how closely the values founders express match those of their backers. Alignment helps, but only up to a point, and only when founders still sound like the community they are pitching to.</div>
+            <div id="kf2" style="display:none;font-size:14px;line-height:1.65;color:#4a5464;background:#f2f6fa;padding:14px 16px;border-radius:3px;margin-top:10px;max-width:65ch">We find that value congruence between founders and backers predicts reward-based crowdfunding success, though the relationship is non-linear rather than monotonic. Using text analytics on campaign narratives at scale, we show that returns to congruence diminish beyond a threshold and are bounded by linguistic conformity to platform norms. Signaling shared values, in other words, is effective only insofar as it is expressed in the community's own discursive conventions.</div>
           </div>
           <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><span style="font-size:11.5px;font-weight:600;color:#8a6d3b;background:#f8f3e6;padding:4px 9px;border-radius:2px;white-space:nowrap">ABDC A*</span><span style="font-size:11.5px;font-weight:600;color:#8a6d3b;background:#f8f3e6;padding:4px 9px;border-radius:2px;white-space:nowrap">ABS 4*</span></div>
         </article>
 
-        <article style="display:grid;grid-template-columns:1fr auto;gap:16px 24px;align-items:start;padding:22px 0;border-bottom:1px solid rgba(27,35,48,0.09)">
+        <article style="display:grid;grid-template-columns:74px 1fr auto;gap:16px 24px;align-items:start;padding:22px 0;border-bottom:1px solid rgba(27,35,48,0.09)">
+          <div style="font-family:'Spectral',serif;font-size:26px;font-weight:400;color:#c9ccd2;line-height:1;padding-top:2px">2025</div>
           <div>
             <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/isj.12559" target="_blank" style="font-size:17px;font-weight:600;line-height:1.4;color:#1b2330">Harambee as a Decolonial Digital Fundraising Approach</a>
             <p style="font-size:14px;color:#58616f;margin:8px 0 0">Frimpong, B., Ayaburi, E., &amp; Andoh-Baidoo, F. K. — <em>Information Systems Journal</em>, 2025</p>
             <button data-kf="kf3" style="display:inline-flex;align-items:center;gap:6px;background:none;border:none;padding:0;margin-top:12px;font-family:'IBM Plex Sans',sans-serif;font-size:12.5px;font-weight:600;color:#004B8D;cursor:pointer;letter-spacing:0.02em"><span>+</span> Key contribution</button>
             <button data-cite="Frimpong, B., Ayaburi, E., &amp; Andoh-Baidoo, F. K. (2025). Harambee as a decolonial digital fundraising approach. Information Systems Journal." style="display:inline-flex;align-items:center;background:none;border:none;padding:0;margin:12px 0 0 18px;font-family:'IBM Plex Sans',sans-serif;font-size:12.5px;font-weight:600;color:#58616f;cursor:pointer;letter-spacing:0.02em">Cite</button>
-            <div id="kf3" style="display:none;font-size:14px;line-height:1.65;color:#4a5464;background:#f2f6fa;padding:14px 16px;border-radius:3px;margin-top:10px;max-width:65ch">Positions Harambee, the Kenyan tradition of communal fundraising, as a decolonial alternative to Western platform logics. Shows how indigenous users repurpose digital tools to balance cultural expectations with technological affordances, and argues digital finance should be designed around local communal values rather than imported ones.</div>
+            <div id="kf3" style="display:none;font-size:14px;line-height:1.65;color:#4a5464;background:#f2f6fa;padding:14px 16px;border-radius:3px;margin-top:10px;max-width:65ch">This paper advances a decolonial reading of digital fundraising through Harambee, the Kenyan practice of communal contribution. Indigenous users, we observe, appropriate and repurpose platform affordances to satisfy communal obligations rather than adopting the individualized donor logic those platforms encode. The implication is that digital finance research should treat local institutional values as design premises rather than as contextual noise.</div>
           </div>
           <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><span style="font-size:11.5px;font-weight:600;color:#8a6d3b;background:#f8f3e6;padding:4px 9px;border-radius:2px;white-space:nowrap">ABDC A*</span><span style="font-size:11.5px;font-weight:600;color:#8a6d3b;background:#f8f3e6;padding:4px 9px;border-radius:2px;white-space:nowrap">ABS 4</span></div>
         </article>
 
-        <article style="display:grid;grid-template-columns:1fr auto;gap:16px 24px;align-items:start;padding:22px 0;border-bottom:1px solid rgba(27,35,48,0.09)">
+        <article style="display:grid;grid-template-columns:74px 1fr auto;gap:16px 24px;align-items:start;padding:22px 0;border-bottom:1px solid rgba(27,35,48,0.09)">
+          <div style="font-family:'Spectral',serif;font-size:26px;font-weight:400;color:#c9ccd2;line-height:1;padding-top:2px">2024</div>
           <div>
             <a href="https://www.tandfonline.com/doi/full/10.1080/10864415.2024.2332049?src=" target="_blank" style="font-size:17px;font-weight:600;line-height:1.4;color:#1b2330">Impact of Campaign Bundling on the Success of Donation-Based Crowdfunding</a>
             <p style="font-size:14px;color:#58616f;margin:8px 0 0">Frimpong, B., Ayaburi, E., Andoh-Baidoo, F. K., Wang, X., &amp; Xiao, N. — <em>International Journal of Electronic Commerce</em>, 2024</p>
             <button data-kf="kf4" style="display:inline-flex;align-items:center;gap:6px;background:none;border:none;padding:0;margin-top:12px;font-family:'IBM Plex Sans',sans-serif;font-size:12.5px;font-weight:600;color:#004B8D;cursor:pointer;letter-spacing:0.02em"><span>+</span> Key contribution</button>
             <button data-cite="Frimpong, B., Ayaburi, E., Andoh-Baidoo, F. K., Wang, X., &amp; Xiao, N. (2024). Impact of campaign bundling on the success of donation-based crowdfunding. International Journal of Electronic Commerce." style="display:inline-flex;align-items:center;background:none;border:none;padding:0;margin:12px 0 0 18px;font-family:'IBM Plex Sans',sans-serif;font-size:12.5px;font-weight:600;color:#58616f;cursor:pointer;letter-spacing:0.02em">Cite</button>
-            <div id="kf4" style="display:none;font-size:14px;line-height:1.65;color:#4a5464;background:#f2f6fa;padding:14px 16px;border-radius:3px;margin-top:10px;max-width:65ch">Campaign bundling pools contributions across projects in a community-pot style that is counterintuitive to the competitive, winner-takes-backing logic of crowdfunding. Yet we show bundling is effective, improving success in donation-based crowdfunding rather than splitting donor attention.</div>
+            <div id="kf4" style="display:none;font-size:14px;line-height:1.65;color:#4a5464;background:#f2f6fa;padding:14px 16px;border-radius:3px;margin-top:10px;max-width:65ch">Campaign bundling improves outcomes in donation-based crowdfunding. Bundling operates on a collective, community-pot logic that runs counter to the competitive, attention-scarce framing dominant in the literature, where campaigns are assumed to cannibalize one another. What we find instead is that pooling projects reduces information asymmetry and mobilizes donors rather than fragmenting them.</div>
           </div>
           <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><span style="font-size:11.5px;font-weight:600;color:#8a6d3b;background:#f8f3e6;padding:4px 9px;border-radius:2px;white-space:nowrap">ABDC A</span><span style="font-size:11.5px;font-weight:600;color:#8a6d3b;background:#f8f3e6;padding:4px 9px;border-radius:2px;white-space:nowrap">ABS 3</span></div>
         </article>
 
-        <article style="display:grid;grid-template-columns:1fr auto;gap:16px 24px;align-items:start;padding:22px 0;border-bottom:1px solid rgba(27,35,48,0.09)">
+        <article style="display:grid;grid-template-columns:74px 1fr auto;gap:16px 24px;align-items:start;padding:22px 0;border-bottom:1px solid rgba(27,35,48,0.09)">
+          <div style="font-family:'Spectral',serif;font-size:26px;font-weight:400;color:#c9ccd2;line-height:1;padding-top:2px">2024</div>
           <div>
             <a href="https://www.sciencedirect.com/science/article/pii/S2352673424000088" target="_blank" style="font-size:17px;font-weight:600;line-height:1.4;color:#1b2330">Take My Word for It! The Role of Projected Certainty Signaling and Certainty Alignment in Reward Crowdfunding Outcomes</a>
             <p style="font-size:14px;color:#58616f;margin:8px 0 0">Frimpong, B., Mohammed, F., Larson, M. K., &amp; Anderson, H. J. — <em>Journal of Business Venturing Insights</em>, 2024</p>
             <button data-kf="kf5" style="display:inline-flex;align-items:center;gap:6px;background:none;border:none;padding:0;margin-top:12px;font-family:'IBM Plex Sans',sans-serif;font-size:12.5px;font-weight:600;color:#004B8D;cursor:pointer;letter-spacing:0.02em"><span>+</span> Key contribution</button>
             <button data-cite="Frimpong, B., Mohammed, F., Larson, M. K., &amp; Anderson, H. J. (2024). Take my word for it! The role of projected certainty signaling and certainty alignment in reward crowdfunding outcomes. Journal of Business Venturing Insights." style="display:inline-flex;align-items:center;background:none;border:none;padding:0;margin:12px 0 0 18px;font-family:'IBM Plex Sans',sans-serif;font-size:12.5px;font-weight:600;color:#58616f;cursor:pointer;letter-spacing:0.02em">Cite</button>
-            <div id="kf5" style="display:none;font-size:14px;line-height:1.65;color:#4a5464;background:#f2f6fa;padding:14px 16px;border-radius:3px;margin-top:10px;max-width:65ch">Founders who sound certain raise more money, but not directly. Projected certainty works through its alignment with the certainty backers themselves express, and it is that alignment that carries the effect on funding outcomes.</div>
+            <div id="kf5" style="display:none;font-size:14px;line-height:1.65;color:#4a5464;background:#f2f6fa;padding:14px 16px;border-radius:3px;margin-top:10px;max-width:65ch">Projected certainty in founder language shapes reward crowdfunding outcomes, but only indirectly. The effect is mediated by certainty alignment, the correspondence between the certainty a founder signals and the certainty backers themselves express. Signaling strength alone, then, is insufficient; congruence between signaler and receiver is what carries the effect on funding.</div>
           </div>
           <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><span style="font-size:11.5px;font-weight:600;color:#8a6d3b;background:#f8f3e6;padding:4px 9px;border-radius:2px;white-space:nowrap">ABDC A</span><span style="font-size:11.5px;font-weight:600;color:#8a6d3b;background:#f8f3e6;padding:4px 9px;border-radius:2px;white-space:nowrap">ABS 2</span></div>
         </article>
 
-        <article style="display:grid;grid-template-columns:1fr auto;gap:16px 24px;align-items:start;padding:22px 0;border-bottom:1px solid rgba(27,35,48,0.09)">
+        <article style="display:grid;grid-template-columns:74px 1fr auto;gap:16px 24px;align-items:start;padding:22px 0;border-bottom:1px solid rgba(27,35,48,0.09)">
+          <div style="font-family:'Spectral',serif;font-size:26px;font-weight:400;color:#c9ccd2;line-height:1;padding-top:2px">2024</div>
           <div>
             <a href="https://www.inderscienceonline.com/doi/abs/10.1504/IJEV.2024.140391" target="_blank" style="font-size:17px;font-weight:600;line-height:1.4;color:#1b2330">Innovation Choices in Modern Times: The Interplay of Technology and Nontechnology Approaches</a>
             <p style="font-size:14px;color:#58616f;margin:8px 0 0">Anderson Jr., H., Amponsah-Odei, S., Frimpong, B., Stejskal, J., &amp; Febiri, F. — <em>International Journal of Entrepreneurial Venturing</em>, 2024</p>
             <button data-kf="kf6" style="display:inline-flex;align-items:center;gap:6px;background:none;border:none;padding:0;margin-top:12px;font-family:'IBM Plex Sans',sans-serif;font-size:12.5px;font-weight:600;color:#004B8D;cursor:pointer;letter-spacing:0.02em"><span>+</span> Key contribution</button>
             <button data-cite="Anderson Jr., H., Amponsah-Odei, S., Frimpong, B., Stejskal, J., &amp; Febiri, F. (2024). Innovation choices in modern times: The interplay of technology and nontechnology approaches. International Journal of Entrepreneurial Venturing." style="display:inline-flex;align-items:center;background:none;border:none;padding:0;margin:12px 0 0 18px;font-family:'IBM Plex Sans',sans-serif;font-size:12.5px;font-weight:600;color:#58616f;cursor:pointer;letter-spacing:0.02em">Cite</button>
-            <div id="kf6" style="display:none;font-size:14px;line-height:1.65;color:#4a5464;background:#f2f6fa;padding:14px 16px;border-radius:3px;margin-top:10px;max-width:65ch">Examines how firms weigh technological against non-technological innovation, and the conditions under which each choice pays off in modern innovation systems.</div>
+            <div id="kf6" style="display:none;font-size:14px;line-height:1.65;color:#4a5464;background:#f2f6fa;padding:14px 16px;border-radius:3px;margin-top:10px;max-width:65ch">Technological and non-technological innovation function as complementary rather than substitute strategies. Examining open innovation decisions across firms, we find that the returns to each depend on the research system in which the firm is embedded, which makes innovation choice contingent on institutional context rather than universally optimal.</div>
           </div>
           <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><span style="font-size:11.5px;font-weight:600;color:#8a6d3b;background:#f8f3e6;padding:4px 9px;border-radius:2px;white-space:nowrap">ABS 1</span></div>
         </article>
 
-        <article style="display:grid;grid-template-columns:1fr auto;gap:16px 24px;align-items:start;padding:22px 0;border-bottom:1px solid rgba(27,35,48,0.09)">
+        <article style="display:grid;grid-template-columns:74px 1fr auto;gap:16px 24px;align-items:start;padding:22px 0;border-bottom:1px solid rgba(27,35,48,0.09)">
+          <div style="font-family:'Spectral',serif;font-size:26px;font-weight:400;color:#c9ccd2;line-height:1;padding-top:2px">2020</div>
           <div>
             <a href="https://www.emerald.com/insight/content/doi/10.1108/JMTM-02-2020-0036/full/html" target="_blank" style="font-size:17px;font-weight:600;line-height:1.4;color:#1b2330">Exploring the Link Between Green Manufacturing, Operational Competitiveness, Firm Reputation, and Sustainable Performance</a>
             <p style="font-size:14px;color:#58616f;margin:8px 0 0">Afum, E., Agyabeng-Mensah, Y., Sun, Z., Frimpong, B., Kusi, L. Y., &amp; Acquah, I. S. K. — <em>Journal of Manufacturing Technology Management</em>, 2020</p>
             <button data-kf="kf7" style="display:inline-flex;align-items:center;gap:6px;background:none;border:none;padding:0;margin-top:12px;font-family:'IBM Plex Sans',sans-serif;font-size:12.5px;font-weight:600;color:#004B8D;cursor:pointer;letter-spacing:0.02em"><span>+</span> Key contribution</button>
             <button data-cite="Afum, E., Agyabeng-Mensah, Y., Sun, Z., Frimpong, B., Kusi, L. Y., &amp; Acquah, I. S. K. (2020). Exploring the link between green manufacturing, operational competitiveness, firm reputation and sustainable performance. Journal of Manufacturing Technology Management." style="display:inline-flex;align-items:center;background:none;border:none;padding:0;margin:12px 0 0 18px;font-family:'IBM Plex Sans',sans-serif;font-size:12.5px;font-weight:600;color:#58616f;cursor:pointer;letter-spacing:0.02em">Cite</button>
-            <div id="kf7" style="display:none;font-size:14px;line-height:1.65;color:#4a5464;background:#f2f6fa;padding:14px 16px;border-radius:3px;margin-top:10px;max-width:65ch">Links green manufacturing practices to firm reputation and sustainable performance, showing that operational competitiveness carries part of the effect.</div>
+            <div id="kf7" style="display:none;font-size:14px;line-height:1.65;color:#4a5464;background:#f2f6fa;padding:14px 16px;border-radius:3px;margin-top:10px;max-width:65ch">Green manufacturing practices improve sustainable performance through firm reputation. Our results indicate that operational competitiveness and reputation jointly transmit the effect of environmental practices onto performance outcomes, suggesting that the returns to green manufacturing are as much reputational as operational.</div>
           </div>
           <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><span style="font-size:11.5px;font-weight:600;color:#8a6d3b;background:#f8f3e6;padding:4px 9px;border-radius:2px;white-space:nowrap">ABDC B</span></div>
         </article>
@@ -363,7 +377,7 @@
     <div style="max-width:1120px;margin:0 auto">
       <div style="max-width:640px;margin-bottom:44px">
         <div style="font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#004B8D;margin-bottom:14px"><span style="opacity:0.45">04 · </span>Teaching</div>
-        <h2 style="font-family:'Spectral',serif;font-weight:500;font-size:44px;line-height:1.05;letter-spacing:-0.02em;margin:0">In the classroom</h2>
+        <h2 style="font-family:'Spectral',serif;font-weight:500;font-size:44px;line-height:1.05;letter-spacing:-0.02em;margin:0">In the classroom</h2><div class="kente" style="width:72px;height:4px;margin-top:18px;background:repeating-linear-gradient(90deg,#004B8D 0 9px,#C8A951 9px 13px,#1b2330 13px 17px,#C8A951 17px 21px)"></div>
       </div>
 
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
@@ -414,7 +428,7 @@
     <div style="max-width:1120px;margin:0 auto">
       <div style="max-width:640px;margin-bottom:44px">
         <div style="font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#004B8D;margin-bottom:14px"><span style="opacity:0.45">05 · </span>Milestones</div>
-        <h2 style="font-family:'Spectral',serif;font-weight:500;font-size:44px;line-height:1.05;letter-spacing:-0.02em;margin:0">Honors &amp; service</h2>
+        <h2 style="font-family:'Spectral',serif;font-weight:500;font-size:44px;line-height:1.05;letter-spacing:-0.02em;margin:0">Honors &amp; service</h2><div class="kente" style="width:72px;height:4px;margin-top:18px;background:repeating-linear-gradient(90deg,#004B8D 0 9px,#C8A951 9px 13px,#1b2330 13px 17px,#C8A951 17px 21px)"></div>
       </div>
 
       <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:48px">
@@ -456,10 +470,23 @@
     <div style="max-width:1120px;margin:0 auto">
       <div style="max-width:640px;margin-bottom:48px">
         <div style="font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#9db8d9;margin-bottom:14px"><span style="opacity:0.45">06 · </span>Background</div>
-        <h2 style="font-family:'Spectral',serif;font-weight:500;font-size:44px;line-height:1.05;letter-spacing:-0.02em;margin:0;color:#fff">Education &amp; experience</h2>
+        <h2 style="font-family:'Spectral',serif;font-weight:500;font-size:44px;line-height:1.05;letter-spacing:-0.02em;margin:0;color:#fff">Education &amp; experience</h2><div class="kente" style="width:72px;height:4px;margin-top:18px;background:repeating-linear-gradient(90deg,#9db8d9 0 9px,#C8A951 9px 13px,#ffffff 13px 17px,#C8A951 17px 21px)"></div>
       </div>
 
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px">
+        <div id="journey" style="grid-column:1 / -1;margin-bottom:44px">
+          <div style="font-size:14px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#9db8d9;margin:0 0 26px">The path here</div>
+          <div style="position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:12px">
+            <div style="position:absolute;left:0;right:0;top:7px;height:1px;background:rgba(255,255,255,0.16)"></div>
+            <div id="journeyline" style="position:absolute;left:0;top:7px;height:1px;width:0;background:#C8A951;transition:width 1.6s cubic-bezier(0.4,0,0.2,1)"></div>
+            <div style="position:relative"><div style="width:9px;height:9px;border-radius:50%;background:#C8A951;margin-bottom:16px"></div><div style="font-size:14px;font-weight:600;color:#fff;line-height:1.3">Cape Coast</div><div style="font-size:12.5px;color:#9aa3b2;margin-top:3px">Ghana</div></div>
+            <div style="position:relative"><div style="width:9px;height:9px;border-radius:50%;background:#C8A951;margin-bottom:16px"></div><div style="font-size:14px;font-weight:600;color:#fff;line-height:1.3">Tampa</div><div style="font-size:12.5px;color:#9aa3b2;margin-top:3px">Florida</div></div>
+            <div style="position:relative"><div style="width:9px;height:9px;border-radius:50%;background:#C8A951;margin-bottom:16px"></div><div style="font-size:14px;font-weight:600;color:#fff;line-height:1.3">Statesboro</div><div style="font-size:12.5px;color:#9aa3b2;margin-top:3px">Georgia</div></div>
+            <div style="position:relative"><div style="width:9px;height:9px;border-radius:50%;background:#C8A951;margin-bottom:16px"></div><div style="font-size:14px;font-weight:600;color:#fff;line-height:1.3">Rio Grande Valley</div><div style="font-size:12.5px;color:#9aa3b2;margin-top:3px">Texas</div></div>
+            <div style="position:relative"><div style="width:9px;height:9px;border-radius:50%;background:#fff;margin-bottom:16px;box-shadow:0 0 0 4px rgba(200,169,81,0.35)"></div><div style="font-size:14px;font-weight:600;color:#fff;line-height:1.3">Lexington</div><div style="font-size:12.5px;color:#9aa3b2;margin-top:3px">Virginia</div></div>
+          </div>
+        </div>
+
         <div>
           <h3 style="font-size:14px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#9db8d9;margin:0 0 22px">Education</h3>
           <div style="display:flex;flex-direction:column;gap:22px">
@@ -533,23 +560,18 @@
 document.addEventListener('DOMContentLoaded', function () {
   var blocks = document.querySelectorAll('section[id] > div, footer > div');
   blocks.forEach(function (el) { el.classList.add('rv'); });
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (e.isIntersecting) { e.target.classList.add('rv-in'); io.unobserve(e.target); }
-    });
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('rv-in'); io.unobserve(e.target); } });
   }, { threshold: 0.06 });
   blocks.forEach(function (el) { io.observe(el); });
 
   var links = Array.prototype.filter.call(document.querySelectorAll('header nav a[href^="#"]'), function (a) { return a.getAttribute('href') !== '#top'; });
   var byId = {};
   links.forEach(function (a) { a.classList.add('nv'); byId[a.getAttribute('href').slice(1)] = a; });
-  var so = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
+  var so = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
       var link = byId[e.target.id];
-      if (link && e.isIntersecting) {
-        links.forEach(function (l) { l.classList.remove('nv-active'); });
-        link.classList.add('nv-active');
-      }
+      if (link && e.isIntersecting) { links.forEach(function (l) { l.classList.remove('nv-active'); }); link.classList.add('nv-active'); }
     });
   }, { rootMargin: '-25% 0px -65% 0px' });
   Object.keys(byId).forEach(function (id) { var s = document.getElementById(id); if (s) so.observe(s); });
@@ -571,11 +593,8 @@ document.addEventListener('DOMContentLoaded', function () {
     h.textContent = '';
     var spans = text.split('').map(function (ch, i) {
       var s = document.createElement('span');
-      s.className = 'akw';
-      s.textContent = ch;
-      s.style.transitionDelay = (i * 60) + 'ms';
-      h.appendChild(s);
-      return s;
+      s.className = 'akw'; s.textContent = ch; s.style.transitionDelay = (i * 60) + 'ms';
+      h.appendChild(s); return s;
     });
     var ao = new IntersectionObserver(function (es) {
       es.forEach(function (e) { if (e.isIntersecting) { spans.forEach(function (s) { s.classList.add('on'); }); ao.disconnect(); } });
@@ -587,12 +606,10 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.addEventListener('click', function () {
       var t = btn.getAttribute('data-cite');
       var done = function () {
-        btn.textContent = 'Copied';
-        btn.style.color = '#004B8D';
+        btn.textContent = 'Copied'; btn.style.color = '#004B8D';
         setTimeout(function () { btn.textContent = 'Cite'; btn.style.color = '#58616f'; }, 1600);
       };
-      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done, done);
-      else done();
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done, done); else done();
     });
   });
 
@@ -609,6 +626,14 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
   if (totop) totop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+  var jl = document.getElementById('journeyline');
+  if (jl) {
+    var jo = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { jl.style.width = '100%'; jo.disconnect(); } });
+    }, { threshold: 0.4 });
+    jo.observe(jl.parentElement);
+  }
 
   var tbtn = document.getElementById('themeBtn');
   var saved = null;
